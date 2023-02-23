@@ -10,6 +10,16 @@ class LearnFlutterPage extends StatefulWidget {
 class _LearnFlutterPageState extends State<LearnFlutterPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(title: const Text('Learn flutter'),
+      ),
+      body: Column(
+        children: [
+          Image.asset('images/flutter.png'),
+         const SizedBox(height: 10,),
+          const Divider(color: Colors.black,),
+          Container(color: Colors.blue,)
+        ]),
+    );
   }
 }
