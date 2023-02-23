@@ -16,10 +16,23 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
       body: Column(
         children: [
           Image.asset('images/flutter.png'),
-         const SizedBox(height: 10,),
+          const SizedBox(height: 10,),
           const Divider(color: Colors.black,),
-          Container(color: Colors.blue,)
-        ]),
+          Container(
+          margin: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(10.0),
+          color: Colors.blueGrey,
+          width: double.infinity,
+          child: const Text(' Flutter widget',
+          style: TextStyle(color: Colors.white
+          ),
+          ),
+          ),
+          ElevatedButton(onPressed: (){debugPrint('Elevated Button');
+          }, child: const Text('Elevated Buttonn'),
+          ),
+        ]
+        ),
     );
   }
 }
