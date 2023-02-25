@@ -27,11 +27,13 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
           style: TextStyle(color: Colors.white
           ),
           ),
+        
           ),
           ElevatedButton(onPressed: (){
             debugPrint('Elevated Button'
           );
-          }, child: const Text('Elevated Buttonn'
+          }, child: const Text('Elevated :"
+          
           ),
           ),
           OutlinedButton(
@@ -42,7 +44,7 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
             }, 
             child: const Text('Outlined Button'
             ),
-          ],
+        ],
           ),
       
         ),
